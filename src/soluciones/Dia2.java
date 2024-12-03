@@ -15,7 +15,7 @@ public class Dia2 {
     }
 
     public static void parteA() throws IOException {
-        try (BufferedReader br = new BufferedReader(new FileReader("src/input/dia2.txt"))) {
+        BufferedReader br = new BufferedReader(new FileReader("src/input/dia2.txt"));
             int safeReports = 0;
             String line;
             while ((line = br.readLine()) != null) {
@@ -25,11 +25,10 @@ public class Dia2 {
                 }
             }
             System.out.println("Solución parte A: " + safeReports);
-        }
     }
 
     public static void parteB() throws IOException {
-        try (BufferedReader br = new BufferedReader(new FileReader("src/input/dia2.txt"))) {
+        BufferedReader br = new BufferedReader(new FileReader("src/input/dia2.txt"));
             int safeReports = 0;
             String line;
             while ((line = br.readLine()) != null) {
@@ -39,7 +38,6 @@ public class Dia2 {
                 }
             }
             System.out.println("Solución parte B: " + safeReports);
-        }
     }
 
     /**
