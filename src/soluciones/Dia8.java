@@ -18,8 +18,6 @@ public class Dia8 {
             String[] map = mapa.toArray(new String[0]);
             System.out.println("Parte A: " + ParteA(map));
             System.out.println("Parte B: " + ParteB(map));
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
